@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'grid.css';
+@import "header.css";
+@import "banner.css";
+@import "base.css";
+@import "footer.css";
+@import "tourPlace.css";
+
+.breadcrumbs {
+    padding: 10px 0;
+}
+.breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.breadcrumbs li + li{
+    margin-left: 5px;
+}
+.breadcrumbs a {
+    margin-right: 5px;
+}
+.breadcrumbs a:hover {
+    opacity: 0.8;
+}
+.breadcrumbs a,
+.breadcrumbs li {
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+
+
+
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 75px;
+}
+.carousel__title h1{
+    font-size: 18px;
+    font-style: italic;
+    padding: 15px;
+    text-indent: 15px;
+}
+.carousel__content {
+    position: relative;
+    overflow-x: hidden;
+}
+.carousel__btn {
+    position: absolute;
+    top: 0;
+    bottom: 17px;
+    transition: all 0.3s ease-out;
+}
+.carousel__btn button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    font-size: 10px;
+    background: #ffffff80;
+    width: 120%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+}
+.carousel__btn button svg {
+    /* display: none; */
+}
+.carousel__btn button:hover {
+    background: #fff;
+}
+.carousel__left-btn {
+    left: 0;
+    transform: translateX(-100%);
+}
+.carousel__right-btn {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.carousel__content:hover button {
+    opacity: 1;
+    visibility: visible;
+}
+.carousel__content:hover .carousel__left-btn {
+    transform: translateX(0%);
+}
+.carousel__content:hover .carousel__right-btn {
+    transform: translateX(-46%);
+}
+
+.carousel__items {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+.carousel__item  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carousel__item-image {
+    flex: 1;
+}
+.carousel__item-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    max-height: 500px;
+    object-fit: cover;
+}
+.carousel__item-text {
+    padding: 15px 0 50px 0;
+}
+.carousel__item-place {
+    color: #9a9a9a;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 5px 0;
+    font-size: 10px;
+    pointer-events: none;
+}
+.carousel__item-title {
+    font-size: 14px;
+}
+.carousel__item-title, 
+.carousel__item-price {
+    font-weight: bold;
+}
+.carousel__item-title:hover {
+    color: #428bca;
+}
+
+
+
+
+
+/* tour tilte part (chung) */
+.tours__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.tours__desc {
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.tours__title {
+    font-size: 40px;
+}
+.banner-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('https://www.tourmientaynambo.com/wp-content/uploads/Tour-du-lich-mien-tay-song-nuoc-hap-dan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-2__title {
+    color: #fff;
+    font-size: 56px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.banner-2__desc {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 85vw;
+}
+.banner-2__btn {
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.banner-2__btn:hover {
+    background-color: rgba(66, 194, 255, 0.8);
+}
+/* tour slider */
+.tour-slider {
+    width: 1200px;
+    margin: 120px auto 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.tour-slider__content {
+    padding: 20px 35px 20px 15px;
+}
+.tour-slider__name {
+    font-size: 40px;
+    color: #333;
+}
+.tour-slider__desc {
+    color: #888;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tour-slider__details--rate {
+    position: relative;
+}
+.tour-slider__details--rate .rate {
+    font-size: 16px;
+}
+.tour-slider__details--rate .rate-active {
+    color: #F8B400;
+}
+.tour-slider__details--price {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.tour-slider__details--btn {
+    margin-top: 10px;
+    padding: 10px 48px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+/* slider */
+.slideshow {
+    max-width: 750px;
+    position: relative;
+}
+.slides {
+    width: 750px;
+    height: 410px;
+    display: flex;
+    position: relative;
+}
+.slides input {
+    display: none;
+}
+.slide-img {
+    position: absolute;
+    width: 750px;
+    height: 410px;
+    opacity: 0;
+    transition: opacity linear 2s;
+}
+/* manual navigation */
+.navigation-manual {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.manual-btn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+.manual-btn:hover {
+    background-color: var(--primary-color);
+}
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+#slide_1:checked ~ .slide-img.first {
+    opacity: 1;
+    z-index: 1;
+}
+#slide_2:checked ~ .slide-img.second {
+    opacity: 1;
+    z-index: 1;
+}
+#slide_3:checked ~ .slide-img.third {
+    opacity: 1;
+    z-index: 1;
+}
+#slide_4:checked ~ .slide-img.final {
+    opacity: 1;
+    z-index: 1;
+}
+/* navigation auto */
+.navigation-auto {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.navigation-auto div {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+#slide_1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: var(--primary-color);
+}
+#slide_2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: var(--primary-color);
+}
+#slide_3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: var(--primary-color);
+}
+#slide_4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: var(--primary-color);
+}
+/* tourism cities */
+.tour-cities__place {
+    position: relative;
+    margin-bottom: 30px;
+}
+.tour-cities__place--img {
+    width: 100%;
+}
+.tour-cities__place--content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.tour-cities__place--name {
+    color: #fff;
+    font-size: 20px;
+}
+.tour-cities__place--price {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+.tour-cities__place--btn {
+    padding: 6px 16px;
+    border-radius: 12px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.tour-cities__place--btn:hover {
+    background-color: rgba(66, 194, 255, 0.8);
+}
+
+.tour-cities__container {
+    position: relative;
+}
+.tour-cities__map {
+    width: 100%;
+    overflow: hidden;
+}
+.tour-cities__map--img {
+    width: 100%;
+}
+.tour-cities__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
+    background-color: rgba(255, 255 , 255, 0.5);
+}
+.tour-cities__title {
+    font-size: 40px;
+}
+.tour-cities__desc {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+.tour-cities__list {
+    list-style: unset;
+    margin-top: 10px;
+}
+.tour-cities__list--heading {
+    font-size: 18px;
+}
+.tour-cities__item {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

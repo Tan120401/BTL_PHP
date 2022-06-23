@@ -1,0 +1,42 @@
+.container__right{
+    background-color:  var(--primary-color);
+
+}
+.container__right--top{
+    text-align: center;
+}
+.container__right--content{
+    padding: 50px 20px;
+    color: #fff;
+}
+.container__right--form input{
+    margin-top: 8px;
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 2px;
+    border:none ;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+.container__right--form textarea{
+    margin-top: 8px;
+    width: 100%;
+    border:none ;
+    padding: 12px 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.container__right--form .btn{
+    width: 170px;
+    cursor: pointer;
+    background-color:#fff;
+    color: var(--primary-color);
+    padding: 12px 24px;
+    border-radius:24px;
+    font-weight: 700;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.mt-32{
+    margin-top: 32px;
+}

@@ -1,0 +1,96 @@
+:root{
+    --primary-color: #42C2FF;
+    --orange-color: #eb5e28;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+body {
+    background-color: #f1f1f1;
+    max-width: calc(1519px + 17px);
+    margin-inline: auto;
+    font-family: 'Nunito', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+select {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+.grid-col-span-3 {
+    grid-column: span 3;
+}
+.text-shadow {
+    text-shadow: 0 1px 3px #191919;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pastel-pink {
+    background-color: #f4bfbf;
+}
+
+.pastel-orange {
+    background-color: #ffd9c0;
+}
+
+.pastel-yellow {
+    background-color: #faf0d7;
+}
+
+.pastel-blue {
+    background-color: #b7e5dd;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slipDown {
+    from {
+        transform: translateY(-7px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,175 @@
+.tours__banner {
+	display: grid;
+	place-items: center;
+	height: 30vh;
+	width: 100%;
+	overflow: hidden;
+	margin-inline: auto;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	position: relative;
+}
+.tours__banner::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.tours__banner-placeInfo {
+	position: absolute;
+	left: 50px;
+	bottom: 30px;
+	color: #fff;
+	z-index: 1;
+}
+.banner__place {
+	font-size: 28px;
+	padding-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+.banner__province,
+.banner__time {
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-right: 50px;
+	font-weight: 100;
+	letter-spacing: 1.2px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+.banner__province svg,
+.banner__time svg {
+	transform: scale(0.76);
+}
+
+
+.tours {
+    max-width: 1519px;
+    margin-inline: auto;
+	min-height: max(calc(100vh - 300px), 300px);
+	background-color: #f9f9f9;
+	padding: 50px 50px 50px 50px;
+}
+.tours > header {
+	padding: 20px 0;
+}
+.tours__left {
+
+}
+.tours__left header {
+	position: relative;
+	margin-bottom: 40px;
+}
+.tours__left header h1 {
+	font-size: 16px;
+}
+.tours__left header::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	width: 30px;
+	height: 3.6px;
+	background-color: #e5e5e5;
+}
+.tours__left-item {
+	display: flex;
+	gap: 12px;
+	padding-bottom: 8px;
+	margin-top: 8px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.tours__left-item-image {
+	min-width: 50px;
+	width: 50px;
+	height: 50px;
+}
+.tours__left-item:hover .tours__left-item-title {
+	color: #428bca;
+}
+.tours__left-item-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.tours__left-item-price {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.tours__item {
+	display: block;
+	box-shadow: 0 0 0 1px #e5e5e5;
+	margin-bottom: 30px;
+}
+.tours__item:hover {
+	box-shadow: 0 0 0 2px #e5e5e5;
+}
+.tours__item:hover .tours__item-title {
+	color: #428bca;
+}
+.tours__item-image {
+	height: 285px;
+}
+.tours__item-image img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.tours__item-text {
+	padding: 15px;
+}
+.tours__item-tourside {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #757575;
+	padding-bottom: 5px;
+}
+.tours__item-title {
+	font-size: 14px;
+}
+.tours__item-price {
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.tours__item-price sup {
+	margin-left: 3px;
+}
+
+.pages__nums {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+.pages__num {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 30px;
+	aspect-ratio: 1;
+
+	padding: 5px;
+	border-radius: 50%;
+	border: 1px solid #333;
+}
+.pages__num.active {
+	background-color: #f60;
+	color: #fff;
+	pointer-events: none;
+	border: none;
+}
+.pages__num:hover,
+.pages__num:focus {
+	opacity: 0.6;
+}

@@ -1,0 +1,22 @@
+@import "header.css";
+@import "banner.css";
+@import "footer.css";
+
+.content__title{
+    text-align: center;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    padding: 24px 0;
+    color: #fff;
+}
+
+.content__secsion{
+    padding: 32px 0;
+
+}
+.content__secsion--detail{
+        text-align: center;
+}
+.mt-16{
+    margin-top: 16px;
+}

@@ -1,0 +1,125 @@
+
+.tour-square__place {
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0;
+}
+.tour-square__place:hover .tour-square__place--img {
+    transform: scale(120%);
+    transition: transform 3s ease;
+}
+.tour-square__place:hover .tour-square__place--details {
+    display: flex;
+}
+.tour-square__place--img {
+    width: 100%;
+}
+.tour-square__place--desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    color: #fff;
+}
+.tour-square__place--name {
+    font-size: 20px;
+}
+
+.tour-square__place--province {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* place details */
+.tour-square__place--details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn linear 0.5s;
+    display: none;
+}
+.tour-square__place--details--name {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.tour-square__place--details--rate {
+    margin-bottom: 5px;
+    position: relative;
+}
+.rate {
+    font-size: 14px;
+    color: #333;
+}
+.rate-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F8B400;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.tour-square__place--details--price {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.tour-square__place--details--btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.tour-square__place--details--btn:hover {
+    background-color: rgba(66, 194, 255, 0.8);
+}
+/* rectangle */
+.tour-rectangle__place {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.tour-rectangle__place--img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.tour-rectangle__place--content {
+    padding: 20px;
+    background-color: #fff;
+}
+.tour-rectangle__place--name {
+    font-size: 28px;
+    color: #333;
+}
+.tour-rectangle__place--province {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.tour-rectangle__place--desc {
+    color: #888;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tour-rectangle__place--btn {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #E8630A;
+}
+.tour-rectangle__place--btn:hover {
+    background-color: rgba(232, 99, 10, 0.8);
+}

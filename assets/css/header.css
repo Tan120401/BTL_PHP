@@ -1,0 +1,228 @@
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: #fff; */
+}
+/* header logo */
+.header__logo {
+    margin: 10px 0;
+}
+.header__logo--img {
+    width: 80px;
+}
+/* header navigation */
+.header__nav {
+    margin-left: 200px;
+    flex: 1;
+
+   /*  position: absolute;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);*/
+   /*  height: 100%;
+    width: 100%;  */
+}
+.header__nav--list {
+    display: flex;
+  /*   display: block;
+    height: 100%;
+    width: max-content;
+    margin-inline: auto; */
+}
+.header__nav--item {
+    height: inherit;
+    display: flex;
+    align-items: center;
+   /*  display: inline-block;
+    height: 100%; */
+    position: relative;
+}
+.header__nav--link {
+/*     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 30px;
+    font-size: 16px;
+    font-size: 14px;
+    height: 100%;
+    color: #fff;
+    white-space: nowrap; */    
+    font-size: 16px;
+    padding: 24px 40px;
+    color: #fff;
+}
+.header__nav--item:hover .header__nav--link {
+    background-color:  var(--primary-color);
+    color: #fff;
+}
+.header__nav--item:hover .header__nav--menu2 {
+    display: flex;
+}
+/* menu cấp 2 */
+.header__nav--menu2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+    display: none;
+}
+.header__nav--menu2--title {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #555;
+    white-space: nowrap;
+}
+.header__nav--menu2--item {
+    min-width: 120px;
+    padding: 8px 12px;
+}
+.header__nav--menu2--item:hover{
+    background-color: #f1f1f1;
+}    
+.header__nav--menu2--link {
+    color: #888;
+}
+/* header login */
+.header__login--btn {
+    display: flex;
+    justify-self: flex-end;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.header__login--btn:hover {
+    background-color: rgba(66, 194, 255, 0.7);
+}
+/* header user */
+.header__user {
+    display: none;
+}
+.header.login .header__login {
+    display: none;
+}
+.header.login .header__user {
+    display: block;
+}
+.header__user--img {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.header__user--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header__user--name {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+.header__user--icon {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+}
+.header__user--menu {
+    position: absolute;
+    top: 100%;
+    right: 50px;
+    width: 240px;
+    background-color: #fff;
+    padding: 0 20px;
+    border-radius: 8px; 
+    box-shadow: 0 -4px 32px rgb(0, 0, 0, 0.2);
+    animation: slipDown 0.5s ease-in-out;
+    display: none;
+}
+.header__user--menu.active {
+    display: block;
+}
+.header__user--menu--heading {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.header__user--menu--heading--avt {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.header__user--menu--heading--name {
+    font-size: 20px;
+    color: #333;
+    margin-left: 16px;
+    white-space: wrap;
+}
+.header__user--menu--item:not(:last-child) {
+    border-bottom: 1px solid #f1f1f1;
+}
+.header__user--menu--link {
+    color: #888;
+    font-size: 16px;
+    padding: 7px 10px;
+    display: block;
+}
+.header__user--menu--link:hover {
+    color: #333;
+}
+
+
+/* Humburger Menu */
+.header__hamburger {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    margin: 0 15px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+.header__hamburger > div {
+    width: 100%;
+    height: 2.5px;
+    background: #333;
+    background: #fff;
+    border-radius: 2px;
+}
+.header__hamburger:hover {
+    background: #e5e5e560;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__nav { 
+        display: none;
+    }
+    .header__hamburger {
+        display: flex;
+    }
+}
+
+
+
